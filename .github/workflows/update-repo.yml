@@ -1,0 +1,65 @@
+name: Update Plugin Repository
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch: 
+  release:
+    types: [published, created] 
+  push:
+    paths:
+      - 'repo-links.json'
+      - 'standalone-repos.json'
+      - '.github/workflows/update-repo.yml'
+
+jobs:
+  update-repo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        npm init -y
+        npm install node-fetch@2
+        
+    - name: Update repo.json
+      run: node scripts/update-repo.js
+      
+    - name: Check for changes
+      id: changes
+      run: |
+        if git diff --quiet repo.json README.md; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Commit and push changes
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add repo.json README.md
+        git commit -m "Auto-update repo.json and README.md - $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+        git push
+        
+    - name: Create summary
+      run: |
+        echo "## Repository Update Summary" >> $GITHUB_STEP_SUMMARY
+        echo "- **Changed:** ${{ steps.changes.outputs.changed }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Timestamp:** $(date -u)" >> $GITHUB_STEP_SUMMARY
+        if [ "${{ steps.changes.outputs.changed }}" == "true" ]; then
+          echo "- **Action:** repo.json and README.md have been updated with latest plugin information" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "- **Action:** No changes detected, files are up to date" >> $GITHUB_STEP_SUMMARY
+        fi

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Mektools",
+        "repository": "https://github.com/MekuMaki/Mektools",
+        "repo_json_url": "https://raw.githubusercontent.com/MekuMaki/Mektools/refs/heads/main/repo.json"
+    },
+    {
+        "name": "Aetherblend",
+        "repository": "https://github.com/ShinoMythmaker/Aetherblend",
+        "repo_json_url": "https://raw.githubusercontent.com/ShinoMythmaker/Aetherblend/main/repo.json"
+    }
+]
