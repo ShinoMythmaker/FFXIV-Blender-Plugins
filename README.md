@@ -6,6 +6,7 @@ A curated collection of Blender plugins for Final Fantasy XIV modding and asset 
 - **MekTools** - v1.9.3 by Shino Mythmaker
 - **AetherBlend** - v0.0.8 by Shino Mythmaker
 - **Yet Another Addon** - v1.0.4 by Aleks
+- **Meddle Tools** - v0.1.2 by PassiveModding
 
 For detailed information about each plugin including download links, compatibility, and features, check the `repo.json` file.
 
