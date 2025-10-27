@@ -27,8 +27,6 @@ Blender will now keep Aetherblend up to date automatically!
 ### Current Plugins:
 - [**MekTools**](https://github.com/MekuMaki/Mektools) - v1.9.3 by Shino Mythmaker
 - [**AetherBlend**](https://github.com/ShinoMythmaker/Aetherblend) - v0.0.8 by Shino Mythmaker
-- [**Yet Another Addon**](https://github.com/Arrenval/Yet-Another-Addon) - v1.0.4 by Aleks
-- [**Meddle Tools**](https://github.com/PassiveModding/MeddleTools) - v0.1.2 by PassiveModding
 
 For detailed information about each plugin including download links, compatibility, and features, check the `repo.json` file.
 
