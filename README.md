@@ -10,8 +10,6 @@ A curated collection of Blender plugins for Final Fantasy XIV modding and asset 
 
 For detailed information about each plugin including download links, compatibility, and features, check the `repo.json` file.
 
-## �🚀 For Plugin Developers
-
 ### Adding Your Repository
 
 **Option 1: Repository with repo.json (Recommended)**
