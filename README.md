@@ -2,16 +2,7 @@
 
 A curated collection of Blender plugins for Final Fantasy XIV modding and asset management. This repository serves as a central hub that automatically aggregates information from multiple plugin repositories.
 
-### Current Plugins:
-- **MekTools** - v1.9.3 by Shino Mythmaker
-- **AetherBlend** - v0.0.8 by Shino Mythmaker
-- **Yet Another Addon** - v1.0.4 by Aleks
-- **Meddle Tools** - v0.1.2 by PassiveModding
-
-For detailed information about each plugin including download links, compatibility, and features, check the `repo.json` file.
-
-
-## Installation (Recommended: Repository Method)
+## Installation
 
 You can install Aetherblend using Blender's new Repository feature for easy updates.
 
@@ -29,6 +20,18 @@ You can install Aetherblend using Blender's new Repository feature for easy upda
 Blender will now keep Aetherblend up to date automatically!
 
 <img width="705" height="299" alt="image" src="https://github.com/user-attachments/assets/b4bb6db9-a31b-441f-9c28-601fc93b21fe" />
+
+
+
+
+### Current Plugins:
+- **MekTools** - v1.9.3 by Shino Mythmaker
+- **AetherBlend** - v0.0.8 by Shino Mythmaker
+- **Yet Another Addon** - v1.0.4 by Aleks
+- **Meddle Tools** - v0.1.2 by PassiveModding
+
+For detailed information about each plugin including download links, compatibility, and features, check the `repo.json` file.
+
 
 
 ### Adding Your Repository
