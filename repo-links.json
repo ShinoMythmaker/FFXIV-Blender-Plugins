@@ -8,5 +8,10 @@
         "name": "Aetherblend",
         "repository": "https://github.com/ShinoMythmaker/Aetherblend",
         "repo_json_url": "https://raw.githubusercontent.com/ShinoMythmaker/Aetherblend/main/repo.json"
+    },
+    {
+        "name": "Yet Another Addon",
+        "repository": "https://github.com/Arrenval/Yet-Another-Addon",
+        "repo_json_url": "https://raw.githubusercontent.com/Arrenval/Yet-Another-Addon/main/repo.json"
     }
 ]
