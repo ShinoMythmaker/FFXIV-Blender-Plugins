@@ -4,7 +4,7 @@ A curated collection of Blender plugins for Final Fantasy XIV modding and asset 
 
 ## Installation
 
-You can install Aetherblend using Blender's new Repository feature for easy updates.
+You can install all Plugins using Blender's new Repository feature for easy updates.
 
 1. In Blender, go to **Edit > Preferences > Get Extensions**
 2. Select the **Repositories** Drop-down-menu (top right)
@@ -15,9 +15,9 @@ You can install Aetherblend using Blender's new Repository feature for easy upda
    ```
 6. Click **Check for Updates on Startup**.
 7. Click **Create**.
-8. Search for Aetherblend and install.
+8. Search for the plugin you need and install.
 
-Blender will now keep Aetherblend up to date automatically!
+Blender will now keep installed plugins up to date automatically!
 
 <img width="705" height="299" alt="image" src="https://github.com/user-attachments/assets/b4bb6db9-a31b-441f-9c28-601fc93b21fe" />
 
