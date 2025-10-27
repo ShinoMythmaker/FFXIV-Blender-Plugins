@@ -35,21 +35,12 @@ function extractPluginInfo(pluginEntry) {
     return [];
 }
 
-async function updateReadmePluginList(allPlugins) {
+async function updateReadmePluginList(pluginDataArray) {
     try {
-        // Extract all plugin information
-        const pluginList = [];
-        for (const entry of allPlugins) {
-            const plugins = extractPluginInfo(entry);
-            pluginList.push(...plugins);
-        }
-
-        // Generate the plugin list text
-        const pluginLines = pluginList.map(plugin =>
-            `- **${plugin.name}** - v${plugin.version} by ${plugin.author}`
-        ).join('\n');
-
-        // Read current README
+        // Generate the plugin list text directly from the plugin data array
+        const pluginLines = pluginDataArray.map(plugin =>
+            `- **${plugin.name}** - v${plugin.version} by ${plugin.maintainer || plugin.author}`
+        ).join('\n');        // Read current README
         const readme = fs.readFileSync('README.md', 'utf8');
 
         // Replace the Current Plugins section
@@ -76,46 +67,49 @@ async function updateRepoJson() {
         console.log(`Processing ${repoLinks.length} linked repositories...`);
         console.log(`Processing ${standaloneRepos.length} standalone repositories...`);
 
-        // Create a simple array to hold all plugins
-        const allPlugins = [];
+        // Create a single data array to hold all plugin data
+        const allPluginData = [];
 
-        // Process linked repositories - fetch their repo.json and add to array
+        // Process linked repositories - fetch their repo.json and extract data
         for (const link of repoLinks) {
             console.log(`Processing linked repo: ${link.name}`);
 
             const repoData = await fetchRepoJson(link.repo_json_url);
-            if (repoData && Array.isArray(repoData)) {
-                // If it's an array, add each item
-                allPlugins.push(...repoData);
+            if (repoData && repoData.data && Array.isArray(repoData.data)) {
+                // Extract the data array from linked repo.json
+                allPluginData.push(...repoData.data);
+            } else if (repoData && Array.isArray(repoData)) {
+                // If it's just an array, add each item
+                allPluginData.push(...repoData);
             } else if (repoData) {
-                // If it's a single object, add it
-                allPlugins.push(repoData);
+                // If it's a single plugin object, add it
+                allPluginData.push(repoData);
             }
         }
 
-        // Process standalone repositories - add their data directly to array
+        // Process standalone repositories - extract their plugin data
         for (const standaloneRepo of standaloneRepos) {
             if (standaloneRepo.data && Array.isArray(standaloneRepo.data)) {
-                // Add the data array items
-                allPlugins.push({
-                    version: standaloneRepo.version,
-                    blocklist: standaloneRepo.blocklist,
-                    data: standaloneRepo.data
-                });
-            } else {
-                // Add the whole object if it's not in the expected format
-                allPlugins.push(standaloneRepo);
+                // Add the individual plugin data items to our main data array
+                allPluginData.push(...standaloneRepo.data);
             }
         }
 
-        // Write the simple array to repo.json
-        fs.writeFileSync('repo.json', JSON.stringify(allPlugins, null, 4));
+        // Create the final repo.json structure
+        const repoStructure = {
+            version: "v1",
+            blocklist: [],
+            data: allPluginData
+        };
+
+        // Write the structured repo.json
+        fs.writeFileSync('repo.json', JSON.stringify(repoStructure, null, 4));
 
         // Update README.md with current plugins
-        await updateReadmePluginList(allPlugins);
+        await updateReadmePluginList(allPluginData);
 
         console.log('✅ Successfully updated repo.json and README.md');
-        console.log(`   Total entries: ${allPlugins.length}`);
+        console.log(`   Total plugins: ${allPluginData.length}`);
 
     } catch (error) {
         console.error('❌ Error updating repo.json:', error);
@@ -123,5 +117,4 @@ async function updateRepoJson() {
     }
 }
 
-// Run the update
 updateRepoJson();
