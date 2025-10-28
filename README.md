@@ -24,7 +24,7 @@ Blender will now keep installed plugins up to date automatically!
 
 ### Current Plugins:
 - [**MekTools**](https://github.com/MekuMaki/Mektools) - v1.9.3 by Shino Mythmaker
-- [**AetherBlend**](https://github.com/ShinoMythmaker/Aetherblend) - v0.0.8 by Shino Mythmaker
+- [**AetherBlend**](https://github.com/ShinoMythmaker/Aetherblend) - v0.0.9 by Shino Mythmaker
 
 For detailed information about each plugin including download links, compatibility, and features, check the `repo.json` file.
 
