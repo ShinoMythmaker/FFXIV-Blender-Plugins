@@ -8,5 +8,10 @@
         "name": "Aetherblend",
         "repository": "https://github.com/ShinoMythmaker/Aetherblend",
         "repo_json_url": "https://raw.githubusercontent.com/ShinoMythmaker/Aetherblend/main/repo.json"
+    },
+    {
+        "name": "FFGear",
+        "repository": "https://github.com/kajupe/FFGear",
+        "repo_json_url": "https://raw.githubusercontent.com/kajupe/FFGear/refs/heads/main/repo.json"
     }
 ]
