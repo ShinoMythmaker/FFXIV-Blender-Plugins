@@ -80,6 +80,33 @@
             "archive_url": "https://github.com/kajupe/FFGear/releases/download/1.1.0/FFGear-1.1.0.zip",
             "archive_size": 1680461,
             "archive_hash": "sha256:4cd1f5f8aebb0f5cce1b27f39607fd3774fc2f64b6a251118b31622b5c0b551c"
+        },
+        {
+            "schema_version": "1.0.0",
+            "id": "meddle_tools",
+            "name": "Meddle Tools",
+            "tagline": "Automatically setup FFXIV Meddle shaders and objects in Blender",
+            "version": "0.1.3",
+            "type": "add-on",
+            "maintainer": "PassiveModding",
+            "license": [
+                "SPDX:GPL-3.0-or-later"
+            ],
+            "blender_version_min": "4.5.0",
+            "blender_version_max": "4.6.0",
+            "website": "https://github.com/PassiveModding/MeddleTools",
+            "permissions": {
+                "files": "Import files from meddle cache directory"
+            },
+            "tags": [
+                "Animation",
+                "Rigging",
+                "Import-Export",
+                "3D-View"
+            ],
+            "archive_url": "https://github.com/PassiveModding/MeddleTools/releases/download/0.1.3/MeddleTools-0.1.3.zip",
+            "archive_size": 741338,
+            "archive_hash": "sha256:56465ce8ceb66c6334ecc86da7fd0ced2f8f836e0067e036aba1d3a3c23545fa"
         }
     ]
 }
