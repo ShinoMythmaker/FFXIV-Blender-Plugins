@@ -19,4 +19,9 @@
         "repository": "https://github.com/PassiveModding/MeddleTools",
         "repo_json_url": "https://raw.githubusercontent.com/PassiveModding/MeddleTools/refs/heads/main/repo.json"
     }
+    {
+        "name": "Yet Another Plugin",
+        "repository": "https://github.com/Arrenval/Yet-Another-Addon",
+        "repo_json_url": "https://raw.githubusercontent.com/Arrenval/Yet-Another-Addon/main/repo.json"
+    }    
 ]
