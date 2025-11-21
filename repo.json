@@ -106,6 +106,37 @@
             "archive_url": "https://github.com/PassiveModding/MeddleTools/releases/download/0.1.3/MeddleTools-0.1.3.zip",
             "archive_size": 741338,
             "archive_hash": "sha256:56465ce8ceb66c6334ecc86da7fd0ced2f8f836e0067e036aba1d3a3c23545fa"
+        },
+        {
+            "schema_version": "1.0.0",
+            "id": "yet_another_addon_ffxiv",
+            "name": "Yet Another Addon",
+            "tagline": "Several tools to speed up XIV modding workflows",
+            "version": "1.0.4",
+            "type": "add-on",
+            "maintainer": "Aleks",
+            "license": [
+                "SPDX:GPL-3.0-or-later"
+            ],
+            "blender_version_min": "4.2.0",
+            "blender_version_max": "4.6.0",
+            "website": "https://github.com/Arrenval/Yet-Another-Addon",
+            "permissions": {
+                "files": "Import/export files from/to disk",
+                "clipboard": "Paste bone scaling"
+            },
+            "tags": [
+                "Animation",
+                "Import-Export",
+                "Modeling",
+                "Mesh",
+                "Object",
+                "Rigging",
+                "User Interface"
+            ],
+            "archive_url": "https://github.com/Arrenval/Yet-Another-Addon/releases/download/v1.0.4/Yet.Another.Addon.v1.0.4.zip",
+            "archive_size": 179068,
+            "archive_hash": "sha256:97becceea83dc832e599614898407f95fccda9335ac95a4d8badbf1775ab48ba"
         }
     ]
 }
