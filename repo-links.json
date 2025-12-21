@@ -23,5 +23,10 @@
         "name": "Yet Another Plugin",
         "repository": "https://github.com/Arrenval/Yet-Another-Addon",
         "repo_json_url": "https://raw.githubusercontent.com/Arrenval/Yet-Another-Addon/main/repo.json"
-    }    
+    },
+    {
+        "name": "bustomize",
+        "repository": "https://github.com/sleepybnuuy/bustomize",
+        "repo_json_url": "https://raw.githubusercontent.com/sleepybnuuy/bustomize/refs/heads/main/repo.json"
+    }
 ]
