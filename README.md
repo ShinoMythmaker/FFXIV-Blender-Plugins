@@ -27,7 +27,7 @@ Blender will now keep installed plugins up to date automatically!
 - [**AetherBlend**](https://github.com/ShinoMythmaker/Aetherblend) - v0.1.42 by Shino Mythmaker
 - [**FFGear**](https://github.com/kajupe/FFGear/) - v1.1.3 by Kaj <kaj.blue>
 - [**Meddle Tools**](https://github.com/PassiveModding/MeddleTools) - v0.1.7 by PassiveModding
-- [**Yet Another Addon**](https://github.com/Arrenval/Yet-Another-Addon) - v1.0.4 by Aleks
+- [**Yet Another Addon**](https://github.com/Arrenval/Yet-Another-Addon) - v1.0.5 by Aleks
 - [**bustomize**](https://github.com/sleepybnuuy/bustomize/) - v1.1.2 by sleepybnuuy
 
 For detailed information about each plugin including download links, compatibility, and features, check the `repo.json` file.
