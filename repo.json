@@ -31,6 +31,58 @@
         },
         {
             "schema_version": "1.0.0",
+            "id": "AetherBlend",
+            "name": "AetherBlend",
+            "tagline": "AetherBlend: Effortless GameEngine to Blender Rigging",
+            "version": "0.3.41",
+            "type": "add-on",
+            "maintainer": "Shino Mythmaker, Oats",
+            "license": [
+                "SPDX:GPL-3.0-or-later"
+            ],
+            "blender_version_min": "4.5.7",
+            "blender_version_max": "7.0.0",
+            "website": "https://github.com/ShinoMythmaker/Aetherblend",
+            "permissions": {
+                "files": "Import files for most of Aetherblend's functions"
+            },
+            "tags": [
+                "Animation",
+                "Rigging",
+                "Import-Export",
+                "3D-View"
+            ],
+            "archive_url": "https://github.com/ShinoMythmaker/Aetherblend/releases/download/v0.3.41/Aetherblend-v0.3.41.zip",
+            "archive_size": 33785140,
+            "archive_hash": "sha256:3676b4df8b5438068b8ae924aa20637848f10de85e8152f0d01e84e9256b942b"
+        },
+        {
+            "schema_version": "1.0.0",
+            "id": "FFGear",
+            "name": "FFGear",
+            "tagline": "Handles material creation for FFXIV gear",
+            "version": "1.3.2",
+            "type": "add-on",
+            "maintainer": "Kaj <kaj.blue>",
+            "license": [
+                "SPDX:GPL-3.0-or-later"
+            ],
+            "blender_version_min": "4.2.0",
+            "blender_version_max": "6.0.0",
+            "website": "https://github.com/kajupe/FFGear/",
+            "permissions": {
+                "files": "Reads .mtrl, textures, and other bundled add-on files",
+                "network": "Checking for and downloading updates, can disable"
+            },
+            "tags": [
+                "Material"
+            ],
+            "archive_url": "https://github.com/kajupe/FFGear/releases/download/1.3.2/FFGear-1.3.2.zip",
+            "archive_size": 1708974,
+            "archive_hash": "sha256:8742e6896e7b0e8ce31e32b12cc07d33638892d7bdb96c4142d72f0fd3da5d98"
+        },
+        {
+            "schema_version": "1.0.0",
             "id": "meddle_tools",
             "name": "Meddle Tools",
             "tagline": "Automatically setup FFXIV Meddle shaders and objects in Blender",
@@ -54,6 +106,59 @@
             "archive_url": "https://github.com/PassiveModding/MeddleTools/releases/download/0.1.9/MeddleTools-0.1.9.zip",
             "archive_size": 777606,
             "archive_hash": "sha256:e958ddc6b2e22f4f036046d17bf0ccc30846c33f9057cf68ed8627936dc338fd"
+        },
+        {
+            "schema_version": "1.0.0",
+            "id": "yet_another_addon_ffxiv",
+            "name": "Yet Another Addon",
+            "tagline": "Several tools to speed up XIV modding workflows",
+            "version": "1.0.5",
+            "type": "add-on",
+            "maintainer": "Aleks",
+            "license": [
+                "SPDX:GPL-3.0-or-later"
+            ],
+            "blender_version_min": "4.2.0",
+            "blender_version_max": "5.1.0",
+            "website": "https://github.com/Arrenval/Yet-Another-Addon",
+            "permissions": {
+                "files": "Import/export files from/to disk",
+                "clipboard": "Paste bone scaling"
+            },
+            "tags": [
+                "Animation",
+                "Import-Export",
+                "Modeling",
+                "Mesh",
+                "Object",
+                "Rigging",
+                "User Interface"
+            ],
+            "archive_url": "https://github.com/Arrenval/Yet-Another-Addon/releases/download/v1.0.5/Yet.Another.Addon.v1.0.5.zip",
+            "archive_size": 218155,
+            "archive_hash": "sha256:080ec76922b0eeb45c49d4be358a774d937061ce9795b24fca643804a95b506d"
+        },
+        {
+            "schema_version": "1.0.0",
+            "id": "bustomize",
+            "name": "bustomize",
+            "tagline": "customize+ to blender plugin",
+            "version": "1.1.3",
+            "type": "add-on",
+            "maintainer": "sleepybnuuy",
+            "license": [
+                "SPDX:GPL-3.0-or-later"
+            ],
+            "blender_version_min": "4.2.0",
+            "blender_version_max": "6.0.0",
+            "website": "https://github.com/sleepybnuuy/bustomize/",
+            "permissions": {},
+            "tags": [
+                "Rigging"
+            ],
+            "archive_url": "https://github.com/sleepybnuuy/bustomize/releases/download/v1.1.3/bustomize-v1.1.3.zip",
+            "archive_size": 6259,
+            "archive_hash": "sha256:18300468efc1670d6da04f3f737de0a58d78ada441a6873b6e32659deedcb4ab"
         }
     ]
 }
