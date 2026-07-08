@@ -23,6 +23,7 @@ Blender will now keep installed plugins up to date automatically!
 
 
 ### Current Plugins:
+- [**MekTools**](https://github.com/MekuMaki/Mektools) - v1.9.3 by Shino Mythmaker
 - [**AetherBlend**](https://github.com/ShinoMythmaker/Aetherblend) - v0.3.41 by Shino Mythmaker, Oats
 - [**FFGear**](https://github.com/kajupe/FFGear/) - v1.3.2 by Kaj <kaj.blue>
 - [**Meddle Tools**](https://github.com/PassiveModding/MeddleTools) - v0.1.9 by PassiveModding
