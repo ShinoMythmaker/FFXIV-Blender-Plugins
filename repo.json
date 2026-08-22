@@ -86,6 +86,32 @@
             "id": "meddle_tools",
             "name": "Meddle Tools",
             "tagline": "Automatically setup FFXIV Meddle shaders and objects in Blender",
+            "version": "0.2.0",
+            "type": "add-on",
+            "maintainer": "PassiveModding",
+            "license": [
+                "SPDX:GPL-3.0-or-later"
+            ],
+            "blender_version_min": "5.2.0",
+            "website": "https://github.com/PassiveModding/MeddleTools",
+            "permissions": {
+                "files": "Import files from meddle cache directory"
+            },
+            "tags": [
+                "Animation",
+                "Rigging",
+                "Import-Export",
+                "3D-View"
+            ],
+            "archive_url": "https://github.com/PassiveModding/MeddleTools/releases/download/0.2.0/MeddleTools-0.2.0.zip",
+            "archive_size": 900713,
+            "archive_hash": "sha256:23e994582e4a2d4a7aff9df5038b98ba05bf527a24ee41f5da75fb81b71918d5"
+        },
+        {
+            "schema_version": "1.0.0",
+            "id": "meddle_tools",
+            "name": "Meddle Tools",
+            "tagline": "Old release for Blender 4.5-5.1 - update Blender for new features",
             "version": "0.1.10",
             "type": "add-on",
             "maintainer": "PassiveModding",
@@ -93,6 +119,7 @@
                 "SPDX:GPL-3.0-or-later"
             ],
             "blender_version_min": "4.5.0",
+            "blender_version_max": "5.2.0",
             "website": "https://github.com/PassiveModding/MeddleTools",
             "permissions": {
                 "files": "Import files from meddle cache directory"
