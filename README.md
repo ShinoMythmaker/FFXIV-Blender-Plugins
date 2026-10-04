@@ -29,7 +29,7 @@ Blender will now keep installed plugins up to date automatically!
 - [**Meddle Tools**](https://github.com/PassiveModding/MeddleTools) - v0.2.0 by PassiveModding
 - [**Meddle Tools**](https://github.com/PassiveModding/MeddleTools) - v0.1.10 by PassiveModding
 - [**Yet Another Addon**](https://github.com/Arrenval/Yet-Another-Addon) - v1.0.5 by Aleks
-- [**bustomize**](https://github.com/sleepybnuuy/bustomize/) - v1.1.3 by sleepybnuuy
+- [**bustomize**](https://github.com/sleepybnuuy/bustomize/) - v1.1.4 by sleepybnuuy
 
 For detailed information about each plugin including download links, compatibility, and features, check the `repo.json` file.
 
